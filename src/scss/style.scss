@@ -5,17 +5,20 @@
 }
 
 body {
+    position: relative;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
 
 .scene {
+    position: absolute;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 5rem;
 }
 
 .hidden {
@@ -23,10 +26,13 @@ body {
 }
 
 #orientation-warning {
+    font-size: 2rem;
+    position: fixed;
+    z-index: 1000;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e0e0e0;
+    background-color: rgba(255, 255, 255, 0.8);
 }
