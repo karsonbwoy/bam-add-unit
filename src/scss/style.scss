@@ -7,11 +7,14 @@
 body {
     position: relative;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     color: #333;
+
 }
 
 .scene {
+    background-image: url('../assets/bg.jpg');
+    background-position: center;
+    background-size: cover;
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -62,15 +65,24 @@ video.bottom-right {
 }
 
 #cta-button {
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 20px;
-    font-size: 1.5rem;
-    background-color: #007bff;
-    color: white;
     border: none;
-    border-radius: 5px;
+    transform: translateX(-50%);
     cursor: pointer;
+
+    img {
+        display: block;
+        width: 50vw;
+    }
+}
+
+.swiper img {
+    display: block;
+
+    width: 100%;
+    min-width: 360px;
+    margin-top: 40vh;
+    padding: 0 10vw;
 }
