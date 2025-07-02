@@ -14,8 +14,18 @@
     <div id="orientation-warning" class="hidden">Please rotate your device to portrait mode.</div>
 
     <main id="app">
-      <section id="scene-intro" class="scene hidden">Scene 1</section>
-      <section id="scene-gallery" class="scene hidden">Scene 2</section>
+      <section id="scene-intro" class="scene hidden">*INTRO*</section>
+      <section id="scene-gallery" class="scene hidden">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="src/assets/shoe1.png" /></div>
+            <div class="swiper-slide"><img src="src/assets/shoe2.png" /></div>
+            <div class="swiper-slide"><img src="src/assets/shoe3.png" /></div>
+            <div class="swiper-slide"><img src="src/assets/shoe4.png" /></div>
+          </div>
+        </div>
+        <button id="cta-button">CTAbutton</button>
+      </section>
       <section id="scene-video" class="scene hidden">
         <video id="video-player" controls autoplay loop muted>
           <source src="src/assets/video.mp4" type="video/mp4">
