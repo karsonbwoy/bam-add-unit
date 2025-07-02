@@ -19,5 +19,14 @@ body {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
+}
+
+#orientation-warning {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
 }
