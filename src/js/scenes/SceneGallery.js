@@ -8,8 +8,7 @@ export const gallery = document.getElementById('scene-gallery');
 const showGallery = (showVideo) => {
     gallery.classList.remove('hidden');
     logSceneChange('gallery');
-    let tween = gsap.to("#cta-button", { scale: 1.1, duration: 0.5, yoyo: true, repeat: -1 });
-    tween.play();
+
     const swiper = new Swiper('.swiper', {
         autoplay: {
             delay: 3000,
@@ -40,6 +39,8 @@ const showGallery = (showVideo) => {
     document.getElementById('cta-button').addEventListener('click', () => {
         logUserInteraction('cta_click');
     })
+    let tween = gsap.to("#cta-button", { scale: 1.1, duration: 0.5, yoyo: true, repeat: -1 });
+    tween.play();
 
 }
 

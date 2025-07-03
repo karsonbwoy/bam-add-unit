@@ -7,9 +7,8 @@ const playIntro = (showGallery) => {
     intro.classList.remove('hidden');
     logSceneChange('intro');
 
-    counter.textContent = 8;
-
     let countdown = 8;
+    counter.textContent = countdown;
     const interval = setInterval(() => {
         countdown--;
         counter.textContent = countdown.toString();
@@ -18,6 +17,7 @@ const playIntro = (showGallery) => {
             counter.textContent = '';
         }
     }, 1000);
+
     setTimeout(() => {
         intro.classList.add('hidden');
         showGallery();
