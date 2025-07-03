@@ -15,6 +15,11 @@ body {
     background-image: url('../assets/bg.jpg');
     background-position: center;
     background-size: cover;
+
+    @media (min-width: 1024px) {
+        background-size: contain;
+    }
+
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -37,7 +42,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(200, 200, 200, 1);
 }
 
 video.top-left {
@@ -85,6 +90,7 @@ video.bottom-right {
     position: fixed;
     z-index: 1000;
     width: 60vw;
+    max-width: 460px;
     top: 10vh;
     left: 50%;
     transform: translateX(-50%);
@@ -96,9 +102,18 @@ video.bottom-right {
 
 .swiper img {
     display: block;
-
     width: 100%;
     min-width: 360px;
     margin-top: 40vh;
     padding: 0 10vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 300px) {
+        min-width: 180px;
+    }
+
+    @media (min-width: 1025px) {
+        width: 70vh;
+    }
 }
