@@ -114,6 +114,12 @@ video.bottom-right {
     }
 
     @media (min-width: 1025px) {
+        padding: 0;
+    }
+}
+
+.swiper-slide {
+    @media (min-width: 1025px) {
         width: 70vh;
     }
 }

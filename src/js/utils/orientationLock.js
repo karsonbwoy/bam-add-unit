@@ -2,7 +2,11 @@
 const orientationWarning = document.getElementById('orientation-warning');
 
 export default function lockOrientation() {
-
+    const isMobile = /Mobi|Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent);
+    if (!isMobile) {
+        orientationWarning.classList.add('hidden');
+        return;
+    }
     window.addEventListener('load', () => {
         if (screen.orientation.type.startsWith('landscape')) {
             orientationWarning.classList.remove('hidden');

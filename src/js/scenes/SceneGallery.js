@@ -13,10 +13,6 @@ const showGallery = (showVideo) => {
             delay: 3000,
             disableOnInteraction: false,
         },
-        effect: 'coverflow',
-        coverflowEffect: {
-            slideShadows: false,
-        },
         breakpoints: {
             1024: {
                 slidesPerView: 3,
