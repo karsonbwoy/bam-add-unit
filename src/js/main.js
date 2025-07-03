@@ -7,6 +7,7 @@ import globalEventsTracking from "./utils/eventTracking";
 
 const app = () => {
     globalEventsTracking();
+
     lockOrientation();
 
     playIntro(() => showGallery(showVideo));
